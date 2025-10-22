@@ -1,0 +1,109 @@
+/* Center the form container both vertically and horizontally */
+.authform-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f6fa;
+  padding: 1.5rem;
+}
+
+/* The form box */
+.authform-form {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 2.2rem 1.5rem;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Title styling */
+.authform-title {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+  color: #196547;
+}
+
+/* Input group */
+.authform-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Labels */
+.authform-label {
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 2px;
+}
+
+/* Inputs */
+.authform-input {
+  padding: 0.8rem 0.9rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border 0.15s;
+}
+.authform-input:focus {
+  border: 1.5px solid #009966;
+}
+
+/* Button */
+.authform-button {
+  margin-top: 10px;
+  padding: 0.85rem;
+  border-radius: 7px;
+  background: #009966;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  transition: background 0.2s;
+}
+.authform-button:hover, .authform-button:focus {
+  background: #007a54;
+}
+
+/* Toggle link (for switching between login/signup) */
+.authform-toggle-text {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 1rem;
+  color: #444;
+}
+.authform-toggle-link {
+  color: #009966;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-left: 4px;
+  transition: color 0.2s;
+}
+.authform-toggle-link:hover,
+.authform-toggle-link:focus {
+  color: #007a54;
+}
+
+/* Responsive: On small screens, make form fill 90% width */
+@media (max-width: 500px) {
+  .authform-form {
+    max-width: 95vw;
+    padding: 1.3rem 0.5rem;
+  }
+}
